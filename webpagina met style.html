@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpage with style</title>
+    <style>
+      #gradient {
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(red, blue);
+        text-shadow: 2px 2px 5px green;
+        box-shadow: 4px 4px 4px grey;
+        transition: 1s ease-in-out;
+      }
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 10px;
+        transition: 1s ease-in-out;
+      }
+      #gradient:hover {
+        transform: translate(200px, 50px);
+      }
+      #box:hover {
+        transform: translate(200px, 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gradient"><h1>Dit is gradient</h1></div>
+    <div id="box"></div>
+  </body>
+</html>
