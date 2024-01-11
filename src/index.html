@@ -1,37 +1,23 @@
-<html>
- <head>
-  <title>Webpagina van Tim</title>
-  <style type="text/css">
-
-     .red {color: red;}
-     #first-section
-     {color: brown;
-    background-color: aqua;
-    width: 300;
-    
-    }
-
-
-
-
-
-  </style>
-
-
- </head>
-
-
-
- <body>
-
-
-    <div id="first-section">
-        <p>Max Verstappen is wereldkampioen</p>
-
-        <p>Tim gaat leren programeren</p>
-    </div>
-
-
- </body>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Welk getal tussen 1 en 5 heb ik in mijn hoofd?</p>
+    <input type="text" id="guess" />
+    <button id="mybutton">Controleer</button>
+    <script>
+      document.getElementById("mybutton").onclick = function () {
+        var x = Math.random();
+        x = x * 6;
+        x = Math.floor(x);
+        if (document.getElementById("guess").value == x) {
+          alert("Goed gedaan!");
+        } else {
+          alert("Nee, het nummer was " + x);
+        }
+      };
+    </script>
+  </body>
 </html>
